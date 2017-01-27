@@ -1,0 +1,244 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Roboto');
+
+/*ICON FONT*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-font {
+    font-family: 'FontAwesome';
+    display: inline-block;
+}
+
+/*MOBILE*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.618;
+    color: #444;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: cornflowerblue;
+    border: 1px solid #DDD;
+    background-color: #EEE;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 1px solid #CCC;
+    background-color: #DDD;
+    color: royalblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Droid Serif", sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#logo {
+    font-size: 4rem;
+}
+
+.masthead-bg {
+    padding: 5% 0;  
+    background-color: #CCC;
+}
+
+#tag-line {
+    color: #888;
+    transition: all 500ms ease-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box {
+    max-width: 60rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin: 0.5rem 0 0 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*navigation*/
+.nav-bg li {
+    display: inline;
+}
+
+.nav-bg li a {
+    display: block;
+    padding: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+/*main-content*/
+.main-content-bg .box p {
+    text-align: left;
+}
+
+/*footer*/
+.footer-bg .box {
+    border-top: 1px solid #DDD;
+}
+
+.footer-bg .box .info {
+    display: inline-block;
+}
+
+.footer-bg .box .info li {
+    text-align: left;
+}
+
+.footer-bg .box .info li a {
+    background-color: transparent;
+    border: none;
+}
+
+.footer-bg .social li {
+    display: inline;
+}
+
+.footer-bg .social li a {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    border: 1px solid #DDD;
+    margin: 0 0.5rem 0 0;
+}
+
+.footer-bg .social li:last-child a {
+    margin: 0;
+}
+
+
+
+/*TABLET*/
+@media screen and (min-width: 35rem) {
+    
+    body {
+        font-size: 1rem;
+    }
+    
+    #logo {
+        font-size: 6rem;
+    }
+    
+    .box {
+        margin: 2rem;
+    }
+    
+    /*adjusting nav*/
+    .nav-bg li a {
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    
+    .nav-bg li:last-child a {
+        margin: 0;
+    }
+    
+    /*adjusting image*/
+    figure {
+        width: 25%;
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    
+    figcaption {
+        text-align: left;
+    }
+    
+    .footer-bg .social li a {
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 64rem) {
+    
+    .box {       
+        font-size: 1.618rem;
+        margin: 2rem auto;
+    }
+    
+    .nav-bg .box {
+        text-align: left;
+    }
+    
+    .nav-bg .box a {
+        text-align: center;
+    }
+    
+    .nav-bg .nav {
+        width: 80%;
+        float: left;
+    }
+    
+    #logo {
+        font-size: 8rem;
+        line-height: 8rem;
+        width: 20%;
+        float: left;
+    }
+    
+    .masthead-bg {
+        padding: 1% 0;
+    }
+    
+    #tag-line {
+        font-size: 6rem;
+        text-align: left;
+    }
+    
+    figure {
+        width: 40%;
+        margin: 0 2rem 1rem 0;
+    }
+    
+    .footer-bg .box {
+        text-align: left; 
+    }
+    
+    .footer-bg .social li a {
+        text-align: center;
+    }
+}
