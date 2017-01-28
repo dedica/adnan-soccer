@@ -9,11 +9,23 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .icon-font {
     font-family: 'FontAwesome';
     display: inline-block;
 }
+.soccer-ball::before {
+    content: "\f1e3";
+}
+.facebook::before {
+    content: "\f09a";
+}
+.twitter::before {
+    content: "\f099";
+}
+.google::before {
+    content: "\f1a0";
+}
+
 
 /*MOBILE*/
 * {
@@ -200,7 +212,7 @@ img {
         margin: 2rem auto;
     }
     
-    .nav-bg .box {
+    .nav-bg .box, h2, form {
         text-align: left;
     }
     
